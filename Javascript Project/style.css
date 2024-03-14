@@ -1,0 +1,187 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* making it so the whole background is the creamy white colour and that theres no extra padding between the content and the sides of the webpage */
+body{
+  background-color:	#F5EBDC;
+  margin:0px;
+  padding:0px;
+  text-align: center;
+}
+
+/*where the downloaded font is created and given a tag*/
+@font-face{
+  font-family:flame-sans;
+  src: url(FlameRegular.otf);
+}
+
+/* the font is applied to the entire webpage and everything is set to a universal font due to a lot of it being that size on the website and changed if needed */
+*{
+  font-family:flame-sans;
+  font-size:18px;
+  font-weight: lighter;
+}
+
+/*the top left and right mean they will stick to those sides fully with the sticky option making it so it will go all the way down and with the z index being one it will appear over everything else  */
+#header1{
+  position:sticky;
+  top:0;
+  right:0;
+  left:0;
+  z-index: 1;
+  background-color: #F5EBDC;
+  height:90px;
+  padding:0px;
+  margin-top:-20px;
+}
+
+/*colour shape and position attributes  */
+#header2{
+ background-color: #4E2414;
+ height:100px;
+ margin:0px;
+ padding-left: 10px;
+}
+
+/* all the icons on both headers and positioned and sized with these 3 id's */
+#icon1{
+  position:absolute;
+  margin-left: -25px;
+  font-size:20px;
+}
+
+#icon2{
+  position:absolute;
+  margin-left:-20px;
+  margin-top:1px;
+}
+
+#icon3{
+  position:absolute;
+  margin-left:-30px;
+  margin-top:-5px;
+  font-size:30px;
+}
+
+/* added padding to the top of the burger logo to make it more centered on the header */
+#bkc{
+  margin-top:10px;
+}
+
+/* the attributes to make the left menu stick to the left, stay in position and have the right amount of space around them */
+#leftoptions{
+  float:left;
+  position: absolute;
+  margin-top:35px;
+  margin-left:60px;
+}
+
+/* these are the attributes for the left options and since they all act the same have the same attributes applied to them  */
+.option{
+  margin-left:10px;
+  text-decoration: none;
+  color: #5c2626;
+}
+
+.option:hover{
+color:red;
+  font-weight:800;
+}
+
+/* the attributes to make the right menu stick to the right, stay in position and have the right amount of space around them aswell but margin top had to be minus due to positioning issues if inputed differently*/
+#rightoptions{
+  margin-top:-60px;
+  margin-right:40px;
+  float:right;
+}
+
+
+/* ropt stands for right options and these basically all affect the individual options due to each one being unique in attributes */
+#ropt1{
+  text-decoration: none;
+  color:#5c2626;
+}
+
+#ropt2{
+  color:#5c2626;
+  margin-right:10px;
+  font-weight:600;
+}
+
+#ropt2:hover{
+  text-decoration: none;
+}
+
+#ropt3{
+ text-decoration: none; 
+ background-color: red;
+ color:white;
+ border-radius:50px;
+ padding-right: 15px;
+ padding-left: 15px;
+ padding-top: 5px;
+ padding-bottom: 5px;
+ font-size:15px;
+  margin-right:10px;
+}
+
+#ropt3:hover{
+  background-color: darkred;
+}
+
+#ropt4{
+   text-decoration: none; 
+   background-color:#5c2626 ;
+   color:white;
+   border-radius:50px;
+   padding-right: 20px;
+   padding-left: 40px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   font-size:15px;
+}
+
+
+/* here is where i applied the colours and shapes to the text on the second header */
+.wt{
+  padding-top:70px;
+  color:white;
+  text-align: left;
+}
+
+/* here the settings for the learn more button are applied and also its hover attributes to make it look as authentic as it can be */
+#learn{
+  background-color: #5c2626;
+  color:white;
+  border-radius:50px;
+  border:1px solid white;
+  text-align:center;
+  width:150px;
+  height:30px;
+  text-decoration:none;
+  float:right;
+  padding-top:8px;
+  margin-top:30px;
+  margin-right:15px;
+  padding-left:15px;
+}
+
+#learn:hover{
+  background-color:pink;
+}
+
+/* this is the only example of me using a css class attribute to have it affect anything I put in Javascript but only for a couple things due to wanting to show more of my Javascript knowledge than my css but still showing that I know how to combine the differnet languages */
+.bkpa{
+   background-color: white; 
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   z-index:-1;
+}
+
+
+
+
+
+
